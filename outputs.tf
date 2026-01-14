@@ -32,3 +32,8 @@ output "ami_id" {
   description = "ID of the Amazon Linux 2023 AMI used"
   value       = data.aws_ami.amazon_linux_2023.id
 }
+
+output "security_group_name" {
+  description = "Name of the security group attached to the instance"
+  value       = data.aws_security_group.existing.name
+}
