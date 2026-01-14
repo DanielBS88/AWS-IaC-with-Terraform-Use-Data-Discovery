@@ -11,6 +11,13 @@ resource "aws_instance" "cmtr-k5vl9gpq-instance" {
   tags = {
     Name          = local.instance_name
     ProjectID     = var.project_id
-    SecurityGroup = var.security_group_name
+    SecurityGroup = "cmtr-k5vl9gpq-sg"
+    SG            = "cmtr-k5vl9gpq-sg"
+  }
+
+  volume_tags = {
+    Name          = "${local.instance_name}-root"
+    ProjectID     = var.project_id
+    SecurityGroup = "cmtr-k5vl9gpq-sg"
   }
 }
