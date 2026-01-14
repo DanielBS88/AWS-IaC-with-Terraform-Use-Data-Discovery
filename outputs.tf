@@ -1,16 +1,16 @@
 output "instance_id" {
   description = "ID of the created EC2 instance"
-  value       = aws_instance.web.id
+  value       = aws_instance.cmtr-k5vl9gpq-instance.id
 }
 
 output "instance_public_ip" {
   description = "Public IP address of the EC2 instance"
-  value       = aws_instance.web.public_ip
+  value       = aws_instance.cmtr-k5vl9gpq-instance.public_ip
 }
 
 output "instance_private_ip" {
   description = "Private IP address of the EC2 instance"
-  value       = aws_instance.web.private_ip
+  value       = aws_instance.cmtr-k5vl9gpq-instance.private_ip
 }
 
 output "discovered_vpc_id" {
