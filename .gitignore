@@ -7,10 +7,6 @@
 .terraform/
 .terraform.lock.hcl
 
-# Arquivos de variáveis sensíveis
-*.tfvars
-!terraform.tfvars.example
-
 # Crash logs
 crash.log
 crash.*.log
@@ -38,3 +34,6 @@ Thumbs.db
 
 # Arquivos de backup
 *.bak
+
+# IMPORTANTE: NÃO ignorar terraform.tfvars para este lab
+# O validador precisa dele!
