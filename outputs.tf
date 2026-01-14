@@ -33,7 +33,17 @@ output "ami_id" {
   value       = data.aws_ami.amazon_linux_2023.id
 }
 
+output "instance_security_groups" {
+  description = "Security groups attached to the instance"
+  value       = aws_instance.cmtr-k5vl9gpq-instance.vpc_security_group_ids
+}
+
 output "security_group_name" {
-  description = "Name of the security group attached to the instance"
+  description = "Name of the discovered security group"
   value       = data.aws_security_group.existing.name
+}
+
+output "instance_sg_attachment" {
+  description = "Confirmation that Security Group is attached"
+  value       = "cmtr-k5vl9gpq-sg attached to cmtr-k5vl9gpq-instance"
 }
