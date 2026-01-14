@@ -1,12 +1,12 @@
-# Local values para construir o nome da instância
+# Local values para nome dinâmico da instância
 locals {
   instance_name = "${var.project_id}-instance"
 }
 
-# IMPORTANTE: O nome do resource deve ser exatamente como especificado no lab
+# Criar instância EC2 usando data sources
 resource "aws_instance" "cmtr-k5vl9gpq-instance" {
   ami                    = data.aws_ami.amazon_linux_2023.id
-  instance_type          = var.instance_type
+  instance_type          = "t2.micro"
   subnet_id              = data.aws_subnet.public.id
   vpc_security_group_ids = [data.aws_security_group.existing.id]
 
