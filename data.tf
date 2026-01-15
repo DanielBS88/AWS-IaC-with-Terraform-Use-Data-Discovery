@@ -14,22 +14,12 @@ data "aws_subnet" "public" {
     name   = "tag:Name"
     values = [var.public_subnet_name]
   }
-
-  filter {
-    name   = "vpc-id"
-    values = [data.aws_vpc.selected.id]
-  }
 }
 
 data "aws_security_group" "selected" {
   filter {
     name   = "tag:Name"
     values = [var.security_group_name]
-  }
-
-  filter {
-    name   = "vpc-id"
-    values = [data.aws_vpc.selected.id]
   }
 }
 
