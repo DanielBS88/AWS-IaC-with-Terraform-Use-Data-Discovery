@@ -1,0 +1,5 @@
+INSTANCE_ID=i-04c6ffd8b1365a522
+SECURITY_GROUP_NAME=cmtr-k5vl9gpq-sg
+SECURITY_GROUP_ID=sg-02f38a832d9a667a9
+INSTANCE_NAME=cmtr-k5vl9gpq-instance
+SG_ATTACHED=cmtr-k5vl9gpq-sg

@@ -1,0 +1,4 @@
+cmtr-k5vl9gpq-sg
+sg-02f38a832d9a667a9 cmtr-k5vl9gpq-sg
+Security Group: cmtr-k5vl9gpq-sg is attached
+Instance: cmtr-k5vl9gpq-instance

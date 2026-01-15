@@ -1,0 +1,62 @@
+{
+  "ami_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ami-070cad4857311cf1a"
+  },
+  "discovered_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-02f38a832d9a667a9"
+  },
+  "discovered_subnet_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "subnet-06d5776aec74816b7"
+  },
+  "discovered_vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-00fd2031163836b92"
+  },
+  "instance_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "i-04c6ffd8b1365a522"
+  },
+  "instance_private_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "10.0.1.145"
+  },
+  "instance_public_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "13.221.251.205"
+  },
+  "instance_security_group_ids": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-02f38a832d9a667a9"
+  },
+  "instance_sg_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "cmtr-k5vl9gpq-sg"
+  },
+  "security_group_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "cmtr-k5vl9gpq-sg"
+  },
+  "sg_check": {
+    "sensitive": false,
+    "type": "string",
+    "value": "cmtr-k5vl9gpq-sg"
+  },
+  "validation_message": {
+    "sensitive": false,
+    "type": "string",
+    "value": "Security group cmtr-k5vl9gpq-sg (sg-02f38a832d9a667a9) is attached to instance i-04c6ffd8b1365a522"
+  }
+}

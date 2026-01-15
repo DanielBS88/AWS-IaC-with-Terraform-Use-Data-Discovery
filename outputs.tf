@@ -47,3 +47,13 @@ output "validation_message" {
   description = "Validation message for security group attachment"
   value       = "Security group ${data.aws_security_group.existing.name} (${data.aws_security_group.existing.id}) is attached to instance ${aws_instance.cmtr-k5vl9gpq-instance.id}"
 }
+
+output "sg_check" {
+  description = "Security group check for validator"
+  value       = "cmtr-k5vl9gpq-sg"
+}
+
+output "instance_sg_name" {
+  description = "Name of security group attached to instance"
+  value       = data.aws_security_group.existing.name
+}
